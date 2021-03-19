@@ -27,6 +27,7 @@ body {
 
 .button:hover {
     cursor: pointer;
+    background: rgb(220,20,60)
 }
 
 .button:active {
@@ -35,6 +36,18 @@ body {
 
 .button:focus {
     outline: none;
+}
+
+.button.active {
+    background: rgb(220,20,60)
+}
+
+.button.active:hover {
+    background: rgb(255,69,0);
+}
+
+.button.active:active {
+    background: rgb(255,69,0);
 }
 
 .tiger {
