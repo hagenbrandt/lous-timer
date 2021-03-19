@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+.stage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: papayawhip;
+    margin: 0;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background: rgb(255,69,0);
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: .175rem;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active {
+    background: rgb(220,20,60)
+}
+
+.button:focus {
+    outline: none;
+}
+
+.tiger {
+    position: absolute;
+    left: 4%;
+    bottom: 14%;
+    width: 16vw;
+    transform: rotateY(180deg);
+}
+
+.meat {
+    position: absolute;
+    right: 4%;
+    bottom: 14%;
+    width: 10vw;
+}
+
+.animation {
+    animation: move;
+    animation-duration: 1800s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+    from {left: 4%}
+    to {left: 74%}
+}
