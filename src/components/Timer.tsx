@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { useState } from 'react'
 import { Button } from "./Button";
+import { Clock } from './Clock'
 import tiger from '../assets/tiger.png'
 import meat from '../assets/meat.svg'
 
@@ -9,6 +10,7 @@ export const Timer = (): JSX.Element => {
 
     return (
         <section className={'stage'}>
+            <Clock state={isTigerMoving} />
             <Button
                 state={isTigerMoving}
                 activeText={'Reset'}
