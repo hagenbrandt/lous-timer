@@ -14,8 +14,11 @@ body {
     position: absolute;
     left: 4%;
     bottom: 14%;
-    width: 16vw;
     transform: rotateY(180deg);
+}
+
+.tiger-image {
+    width: 16vw;
 }
 
 .meat {
@@ -32,7 +35,16 @@ body {
     animation-timing-function: linear;
 }
 
+.jump {
+    animation: jump 1s infinite;
+    transition: ease-in-out;
+}
+
 @keyframes move {
     from {left: 4%}
     to {left: 74%}
+}
+
+@keyframes jump {
+    to {transform: translateY(5%)}
 }
