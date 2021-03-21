@@ -36,4 +36,8 @@ const InputStyled = styled.input<TimeInputProps>`
   &:focus {
     outline: none;
   }
+
+  @media (min-width: 768px) {
+    top: 10%;
+  }
 `
