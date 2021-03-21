@@ -19,7 +19,7 @@ export const Timer = (): JSX.Element => {
         if (isTigerMoving) {
             time > 0 && setTimeout(() => setSeconds(seconds - 1), 1000)
         }
-    }, [isTigerMoving, seconds])
+    }, [isTigerMoving, seconds, time])
 
     return (
         <section className={'stage'}>
