@@ -35,7 +35,9 @@ export const Timer = (): JSX.Element => {
                 onClick={handleClick}
             />
             <img id={'meat'} className={'meat'} src={meat} alt={'meat'} />
-            <img id={'tiger'} className={!isTigerMoving ? 'tiger' : 'tiger animation'} src={tiger} alt={'tiger'} />
+            <span id={'tiger'} className={!isTigerMoving ? 'tiger' : 'tiger animation'}>
+                <img className={!isTigerMoving ? 'tiger-image' : 'tiger-image jump'} src={tiger} alt={'tiger'} />
+            </span>
         </section>
     )
 
